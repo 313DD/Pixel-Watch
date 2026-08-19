@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Minimalist digital watch face — Watch Face Format (WFF)
+  Target: Google Pixel Watch 3 (round display)
+  Canvas: 450x450 (WFF's standard reference canvas; the system scales this to
+  the physical panel — 408x408 on the 41mm Pixel Watch 3, 456x456 on the 45mm).
+  If you want pixel-perfect 1:1 authoring instead of relying on system scaling,
+  change width/height below to 408 or 456 to match your specific case size.
+
+  No background asset is drawn on purpose: on the Pixel Watch 3's AMOLED
+  panel, undrawn (transparent) pixels render as true black, which draws less
+  power than painting a black rectangle every frame. This is the standard
+  WFF battery-saving pattern for dark watch faces.
+-->
+<WatchFace width="450" height="450" clipShape="CIRCLE">
+
+  <Scene>
+
+    <!-- ===================== CENTER: DIGITAL TIME (HH:MM) ===================== -->
+    <!-- Bounds: x 140-310, y 195-255. Kept clear of every complication slot below. -->
+    <DigitalClock x="140" y="195" width="170" height="60">
+      <TimeText x="0" y="0" width="170" height="60" format="HH:mm">
+        <Font family="SYNC_TO_DEVICE" size="54" color="#FFFFFF" />
+      </TimeText>
+    </DigitalClock>
+
+    <!-- ===================== COMPLICATION SLOT 1 — 12 o'clock (top) ===================== -->
+    <!-- Bounds: x 185-265, y 70-150 -->
+    <ComplicationSlot slotId="1" x="185" y="70" width="80" height="80"
+        supportedTypes="SHORT_TEXT SMALL_IMAGE MONOCHROMATIC_IMAGE EMPTY">
+      <BoundingOval x="0" y="0" width="80" height="80" />
+
+      <Complication type="SHORT_TEXT">
+        <PartText x="0" y="0" width="80" height="80">
+          <Text align="CENTER">
+            <Font family="SYNC_TO_DEVICE" size="20" color="#B3B3B3">
+              <Template>
+                <Parameter expression="[COMPLICATION.TEXT]" />
+              </Template>
+            </Font>
+          </Text>
+        </PartText>
+      </Complication>
+
+      <Complication type="MONOCHROMATIC_IMAGE">
+        <PartImage x="10" y="10" width="60" height="60">
+          <Image resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" tintColor="#B3B3B3" />
+        </PartImage>
+      </Complication>
+
+      <Complication type="SMALL_IMAGE">
+        <PartImage x="0" y="0" width="80" height="80">
+          <Image resource="[COMPLICATION.SMALL_IMAGE]" />
+        </PartImage>
+      </Complication>
+
+      <Complication type="EMPTY" />
+    </ComplicationSlot>
+
+    <!-- ===================== COMPLICATION SLOT 2 — 9 o'clock (left) ===================== -->
+    <!-- Bounds: x 40-120, y 185-265 -->
+    <ComplicationSlot slotId="2" x="40" y="185" width="80" height="80"
+        supportedTypes="SHORT_TEXT SMALL_IMAGE MONOCHROMATIC_IMAGE EMPTY">
+      <BoundingOval x="0" y="0" width="80" height="80" />
+
+      <Complication type="SHORT_TEXT">
+        <PartText x="0" y="0" width="80" height="80">
+          <Text align="CENTER">
+            <Font family="SYNC_TO_DEVICE" size="20" color="#B3B3B3">
+              <Template>
+                <Parameter expression="[COMPLICATION.TEXT]" />
+              </Template>
+            </Font>
+          </Text>
+        </PartText>
+      </Complication>
+
+      <Complication type="MONOCHROMATIC_IMAGE">
+        <PartImage x="10" y="10" width="60" height="60">
+          <Image resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" tintColor="#B3B3B3" />
+        </PartImage>
+      </Complication>
+
+      <Complication type="SMALL_IMAGE">
+        <PartImage x="0" y="0" width="80" height="80">
+          <Image resource="[COMPLICATION.SMALL_IMAGE]" />
+        </PartImage>
+      </Complication>
+
+      <Complication type="EMPTY" />
+    </ComplicationSlot>
+
+    <!-- ===================== COMPLICATION SLOT 3 — 3 o'clock (right) ===================== -->
+    <!-- Bounds: x 330-410, y 185-265 -->
+    <ComplicationSlot slotId="3" x="330" y="185" width="80" height="80"
+        supportedTypes="SHORT_TEXT SMALL_IMAGE MONOCHROMATIC_IMAGE EMPTY">
+      <BoundingOval x="0" y="0" width="80" height="80" />
+
+      <Complication type="SHORT_TEXT">
+        <PartText x="0" y="0" width="80" height="80">
+          <Text align="CENTER">
+            <Font family="SYNC_TO_DEVICE" size="20" color="#B3B3B3">
+              <Template>
+                <Parameter expression="[COMPLICATION.TEXT]" />
+              </Template>
+            </Font>
+          </Text>
+        </PartText>
+      </Complication>
+
+      <Complication type="MONOCHROMATIC_IMAGE">
+        <PartImage x="10" y="10" width="60" height="60">
+          <Image resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" tintColor="#B3B3B3" />
+        </PartImage>
+      </Complication>
+
+      <Complication type="SMALL_IMAGE">
+        <PartImage x="0" y="0" width="80" height="80">
+          <Image resource="[COMPLICATION.SMALL_IMAGE]" />
+        </PartImage>
+      </Complication>
+
+      <Complication type="EMPTY" />
+    </ComplicationSlot>
+
+    <!-- ===================== COMPLICATION SLOT 4 — lower-left (~7-8 o'clock) ===================== -->
+    <!-- Bounds: x 90-170, y 310-390 -->
+    <ComplicationSlot slotId="4" x="90" y="310" width="80" height="80"
+        supportedTypes="SHORT_TEXT SMALL_IMAGE MONOCHROMATIC_IMAGE EMPTY">
+      <BoundingOval x="0" y="0" width="80" height="80" />
+
+      <Complication type="SHORT_TEXT">
+        <PartText x="0" y="0" width="80" height="80">
+          <Text align="CENTER">
+            <Font family="SYNC_TO_DEVICE" size="20" color="#B3B3B3">
+              <Template>
+                <Parameter expression="[COMPLICATION.TEXT]" />
+              </Template>
+            </Font>
+          </Text>
+        </PartText>
+      </Complication>
+
+      <Complication type="MONOCHROMATIC_IMAGE">
+        <PartImage x="10" y="10" width="60" height="60">
+          <Image resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" tintColor="#B3B3B3" />
+        </PartImage>
+      </Complication>
+
+      <Complication type="SMALL_IMAGE">
+        <PartImage x="0" y="0" width="80" height="80">
+          <Image resource="[COMPLICATION.SMALL_IMAGE]" />
+        </PartImage>
+      </Complication>
+
+      <Complication type="EMPTY" />
+    </ComplicationSlot>
+
+    <!-- ===================== COMPLICATION SLOT 5 — lower-right (~4-5 o'clock) ===================== -->
+    <!-- Bounds: x 280-360, y 310-390 -->
+    <ComplicationSlot slotId="5" x="280" y="310" width="80" height="80"
+        supportedTypes="SHORT_TEXT SMALL_IMAGE MONOCHROMATIC_IMAGE EMPTY">
+      <BoundingOval x="0" y="0" width="80" height="80" />
+
+      <Complication type="SHORT_TEXT">
+        <PartText x="0" y="0" width="80" height="80">
+          <Text align="CENTER">
+            <Font family="SYNC_TO_DEVICE" size="20" color="#B3B3B3">
+              <Template>
+                <Parameter expression="[COMPLICATION.TEXT]" />
+              </Template>
+            </Font>
+          </Text>
+        </PartText>
+      </Complication>
+
+      <Complication type="MONOCHROMATIC_IMAGE">
+        <PartImage x="10" y="10" width="60" height="60">
+          <Image resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" tintColor="#B3B3B3" />
+        </PartImage>
+      </Complication>
+
+      <Complication type="SMALL_IMAGE">
+        <PartImage x="0" y="0" width="80" height="80">
+          <Image resource="[COMPLICATION.SMALL_IMAGE]" />
+        </PartImage>
+      </Complication>
+
+      <Complication type="EMPTY" />
+    </ComplicationSlot>
+
+  </Scene>
+
+</WatchFace>
