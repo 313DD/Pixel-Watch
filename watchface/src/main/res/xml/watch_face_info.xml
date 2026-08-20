@@ -4,5 +4,5 @@
   <!-- No UserConfigurations are defined in watchface.xml yet, so this face
        has nothing for the user to edit. Set this to true if you later add
        ColorConfiguration/UserConfigurations options. -->
-  <Editable value="false" />
+  <Editable value="true" />
 </WatchFaceInfo>
