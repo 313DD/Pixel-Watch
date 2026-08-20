@@ -33,7 +33,7 @@
       <Complication type="SHORT_TEXT">
         <PartText x="0" y="0" width="80" height="80">
           <Text align="CENTER">
-            <Font family="SYNC_TO_DEVICE" size="20" color="#B3B3B3">
+            <Font family="SYNC_TO_DEVICE" size="28" color="#B3B3B3">
               <Template>
                 <![CDATA[%s]]><Parameter expression="[COMPLICATION.TEXT]" />
               </Template>
@@ -45,7 +45,7 @@
       <Complication type="RANGED_VALUE">
         <PartText x="0" y="0" width="80" height="80">
           <Text align="CENTER">
-            <Font family="SYNC_TO_DEVICE" size="20" color="#B3B3B3">
+            <Font family="SYNC_TO_DEVICE" size="28" color="#B3B3B3">
               <Template>
                 <![CDATA[%s]]><Parameter expression="[COMPLICATION.TEXT]" />
               </Template>
@@ -78,7 +78,7 @@
       <Complication type="SHORT_TEXT">
         <PartText x="0" y="0" width="80" height="80">
           <Text align="CENTER">
-            <Font family="SYNC_TO_DEVICE" size="20" color="#B3B3B3">
+            <Font family="SYNC_TO_DEVICE" size="28" color="#B3B3B3">
               <Template>
                 <![CDATA[%s]]><Parameter expression="[COMPLICATION.TEXT]" />
               </Template>
@@ -90,7 +90,7 @@
       <Complication type="RANGED_VALUE">
         <PartText x="0" y="0" width="80" height="80">
           <Text align="CENTER">
-            <Font family="SYNC_TO_DEVICE" size="20" color="#B3B3B3">
+            <Font family="SYNC_TO_DEVICE" size="28" color="#B3B3B3">
               <Template>
                 <![CDATA[%s]]><Parameter expression="[COMPLICATION.TEXT]" />
               </Template>
@@ -123,7 +123,7 @@
       <Complication type="SHORT_TEXT">
         <PartText x="0" y="0" width="80" height="80">
           <Text align="CENTER">
-            <Font family="SYNC_TO_DEVICE" size="20" color="#B3B3B3">
+            <Font family="SYNC_TO_DEVICE" size="28" color="#B3B3B3">
               <Template>
                 <![CDATA[%s]]><Parameter expression="[COMPLICATION.TEXT]" />
               </Template>
@@ -135,7 +135,7 @@
       <Complication type="RANGED_VALUE">
         <PartText x="0" y="0" width="80" height="80">
           <Text align="CENTER">
-            <Font family="SYNC_TO_DEVICE" size="20" color="#B3B3B3">
+            <Font family="SYNC_TO_DEVICE" size="28" color="#B3B3B3">
               <Template>
                 <![CDATA[%s]]><Parameter expression="[COMPLICATION.TEXT]" />
               </Template>
@@ -168,7 +168,7 @@
       <Complication type="SHORT_TEXT">
         <PartText x="0" y="0" width="80" height="80">
           <Text align="CENTER">
-            <Font family="SYNC_TO_DEVICE" size="20" color="#B3B3B3">
+            <Font family="SYNC_TO_DEVICE" size="28" color="#B3B3B3">
               <Template>
                 <![CDATA[%s]]><Parameter expression="[COMPLICATION.TEXT]" />
               </Template>
@@ -180,7 +180,7 @@
       <Complication type="RANGED_VALUE">
         <PartText x="0" y="0" width="80" height="80">
           <Text align="CENTER">
-            <Font family="SYNC_TO_DEVICE" size="20" color="#B3B3B3">
+            <Font family="SYNC_TO_DEVICE" size="28" color="#B3B3B3">
               <Template>
                 <![CDATA[%s]]><Parameter expression="[COMPLICATION.TEXT]" />
               </Template>
@@ -213,7 +213,7 @@
       <Complication type="SHORT_TEXT">
         <PartText x="0" y="0" width="80" height="80">
           <Text align="CENTER">
-            <Font family="SYNC_TO_DEVICE" size="20" color="#B3B3B3">
+            <Font family="SYNC_TO_DEVICE" size="28" color="#B3B3B3">
               <Template>
                 <![CDATA[%s]]><Parameter expression="[COMPLICATION.TEXT]" />
               </Template>
@@ -225,7 +225,7 @@
       <Complication type="RANGED_VALUE">
         <PartText x="0" y="0" width="80" height="80">
           <Text align="CENTER">
-            <Font family="SYNC_TO_DEVICE" size="20" color="#B3B3B3">
+            <Font family="SYNC_TO_DEVICE" size="28" color="#B3B3B3">
               <Template>
                 <![CDATA[%s]]><Parameter expression="[COMPLICATION.TEXT]" />
               </Template>
